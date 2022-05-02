@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "721886152447",
+    "project_id": "cashmobex-cbdb7",
+    "storage_bucket": "cashmobex-cbdb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721886152447:android:2fa50455b5b65ef691eeca",
+        "android_client_info": {
+          "package_name": "com.mobileexchanger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721886152447-p78bvb2fq9u6h5k0npmmqhcaonamcspe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACp-9sYC0FiQjP87FmYyQBMs_B6JZGu6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721886152447-p78bvb2fq9u6h5k0npmmqhcaonamcspe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
