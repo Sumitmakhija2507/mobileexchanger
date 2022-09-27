@@ -1,4 +1,4 @@
-package com.cretenix.mobileexchanger;
+package com.rejoicehub.mobileexchanger;
 
 import org.junit.Test;
 
