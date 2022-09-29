@@ -1,4 +1,4 @@
-package com.cretenix.mobileexchanger;
+package com.rejoicehub.mobileexchanger;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MotionEvent;
 import android.view.View;
+import android.webkit.CookieSyncManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -42,14 +44,29 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setAppCacheEnabled(true);
         webSettings.setJavaScriptEnabled(true);
-        mWebView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
 
-        mWebView.loadUrl("https://newme.cashmobex.com/");
+
+
+
+
+
+
+        mWebView.loadUrl("https://www.mobileexchanger.com/");
+
+        final WebSettings settings = mWebView.getSettings();
+        settings.setDomStorageEnabled(true);
+        settings.setJavaScriptEnabled(true);
+        mWebView.setVerticalScrollBarEnabled(false);
+
+
+
+
+
 
         final String token = MyFirebaseMessagingService.onTokenRefresh(context);
 
 
-        AndroidNetworking.get("https://newme.cashmobex.com/home/deviceid?id="+token+"&type=android")
+        AndroidNetworking.get("https://www.mobileexchanger.com/home/deviceid?id="+token+"&type=android")
                 .setPriority(Priority.LOW)
                 .build()
                 .getAsJSONArray(new JSONArrayRequestListener() {
@@ -63,6 +80,9 @@ public class MainActivity extends AppCompatActivity {
                         Log.e("response error", token + error.toString());
                     }
                 });
+
+
+
     }
 
     public class Callback extends WebViewClient {
@@ -74,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         public void onPageStarted(WebView webview, String url, Bitmap favicon) {
             // webview.setVisibility(webview.INVISIBLE);
             if (Build.VERSION.SDK_INT >= 11){
-                webview.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+
             }
         }
 
@@ -101,6 +121,8 @@ public class MainActivity extends AppCompatActivity {
                 }
             }, 2000);
             //hide loading image
+
+            CookieSyncManager.getInstance().sync();
         }
     }
 

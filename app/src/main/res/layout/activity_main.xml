@@ -4,26 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
+
     tools:context=".MainActivity">
 
     <WebView
         android:id="@+id/activity_main_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"
-        />
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="272dp"
-        android:layout_height="252dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:src="@drawable/spalsh_cashmobex"
+        android:layout_gravity="center"
+        android:src="@drawable/mobileexchanger"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_cashmobex"
-        tools:srcCompat="@drawable/logo_cashmobex" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/mobileexchanger"
+        tools:srcCompat="@drawable/mobileexchanger" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

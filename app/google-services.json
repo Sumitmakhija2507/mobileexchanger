@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "721886152447",
-    "project_id": "cashmobex-cbdb7",
-    "storage_bucket": "cashmobex-cbdb7.appspot.com"
+    "project_number": "304564079362",
+    "project_id": "mobileexchanger-d7ab4",
+    "storage_bucket": "mobileexchanger-d7ab4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:721886152447:android:2fa50455b5b65ef691eeca",
+        "mobilesdk_app_id": "1:304564079362:android:afe8e40f82591b8a3fd01b",
         "android_client_info": {
-          "package_name": "com.mobileexchanger"
+          "package_name": "com.rejoicehub.mobileexchanger"
         }
       },
       "oauth_client": [
         {
-          "client_id": "721886152447-p78bvb2fq9u6h5k0npmmqhcaonamcspe.apps.googleusercontent.com",
+          "client_id": "304564079362-hkf4lb95bv0ujnnpk8pdllqbr4nn9308.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyACp-9sYC0FiQjP87FmYyQBMs_B6JZGu6g"
+          "current_key": "AIzaSyCrGwYWCzjqMD3CScPYQn32lG2N9DKmmCU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "721886152447-p78bvb2fq9u6h5k0npmmqhcaonamcspe.apps.googleusercontent.com",
+              "client_id": "304564079362-hkf4lb95bv0ujnnpk8pdllqbr4nn9308.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
